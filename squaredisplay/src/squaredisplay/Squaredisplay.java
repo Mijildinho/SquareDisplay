@@ -24,7 +24,26 @@ public class Squaredisplay {
         while (inputNumber < 1 || inputNumber > 15) {
             System.out.print("Incorrect. Please enter another number: ");
             inputNumber = scanner.nextInt();
+            
+            
+            
+           
+            System.out.println();
+            System.out.println("A row of num asterisks:");
 
+            for (int i = 1; i <= inputNumber; i++) {
+                System.out.print("*");
+            }
+            System.out.println(); 
+            System.out.println();
+            System.out.println("A box of asterisks: ");
+
+            for (int row = 1; row <= inputNumber; row++) {
+                for (int col = 1; col <= inputNumber; col++) {
+                    System.out.print("*");
+                }
+                System.out.println(); 
+            }
         }
     }
 }
